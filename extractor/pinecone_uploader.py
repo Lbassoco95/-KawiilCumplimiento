@@ -1,10 +1,21 @@
 from dotenv import load_dotenv  # NUEVO: para cargar variables de entorno
 import os
 from openai import OpenAI  # NUEVO: importar OpenAI client
-import pinecone  # type: ignore
+from pinecone import Pinecone  # NUEVO: importar la nueva versión de Pinecone
 from typing import List, Dict
 import uuid
 from datetime import datetime
+import certifi
+import ssl
+
+# Configurar SSL para MacOS
+os.environ["SSL_CERT_FILE"] = certifi.where()
+os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
+
+# Configurar contexto SSL
+ssl_context = ssl.create_default_context(cafile=certifi.where())
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
 
 # Cargar variables de entorno desde .env
 load_dotenv()
@@ -22,41 +33,40 @@ def upload_chunks_to_pinecone(chunks: List[str], metadata: Dict) -> bool:
         # Leer variables de entorno
         openai_api_key = os.getenv('OPENAI_API_KEY')
         pinecone_api_key = os.getenv('PINECONE_API_KEY')
-        pinecone_environment = os.getenv('PINECONE_ENVIRONMENT')
         pinecone_index_name = os.getenv('PINECONE_INDEX_NAME', 'default-index')
         
-        if not all([openai_api_key, pinecone_api_key, pinecone_environment]):
+        if not all([openai_api_key, pinecone_api_key]):
             print("Error: Faltan variables de entorno requeridas")
-            print("OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_ENVIRONMENT")
+            print("OPENAI_API_KEY, PINECONE_API_KEY")
             return False
         
         # Configurar OpenAI (nueva API)
         client = OpenAI(api_key=openai_api_key)
         
         # Configurar Pinecone (nueva API)
-        pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
+        pc = Pinecone(api_key=pinecone_api_key)
         
         # Verificar si el índice existe y su dimensión
-        existing_indexes = pinecone.list_indexes()
+        existing_indexes = pc.list_indexes()
         if pinecone_index_name in existing_indexes:
-            index_info = pinecone.describe_index(pinecone_index_name)
+            index_info = pc.describe_index(pinecone_index_name)
             if hasattr(index_info, 'dimension') and index_info.dimension != 1536:
                 print(f"Eliminando índice '{pinecone_index_name}' con dimensión incorrecta ({index_info.dimension})...")
-                pinecone.delete_index(pinecone_index_name)
+                pc.delete_index(pinecone_index_name)
                 print(f"Índice '{pinecone_index_name}' eliminado.")
         
         # Crear el índice si no existe
-        existing_indexes = pinecone.list_indexes()
+        existing_indexes = pc.list_indexes()
         if pinecone_index_name not in existing_indexes:
             print(f"Creando índice: {pinecone_index_name}")
-            pinecone.create_index(
+            pc.create_index(
                 name=pinecone_index_name,
                 dimension=1536,  # text-embedding-3-small dimension
                 metric='cosine'
             )
         
         # Obtener el índice
-        index = pinecone.Index(pinecone_index_name)
+        index = pc.Index(pinecone_index_name)
         
         # Generar embeddings para todos los chunks
         print(f"Generando embeddings para {len(chunks)} chunks...")

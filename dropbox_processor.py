@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from extractor.text_chunker import chunk_text, get_embedding
 from extractor.extractor_ocr import needs_ocr, extract_text_with_ocr_if_needed
 from utils.text_extractor import extract_text_from_file
-import pinecone
+from pinecone import Pinecone
 from uuid import uuid4
 import logging
 
@@ -15,19 +15,18 @@ logger = logging.getLogger(__name__)
 # Cargar variables de entorno
 load_dotenv()
 
+# Configuración
 DROPBOX_TOKEN = os.getenv("DROPBOX_ACCESS_TOKEN")
-INDEX_NAME = "vizum-chieff"
-FOLDER_PATH = "/IA/PRUEBAS/Auditorías Vizum CNBV y anuales"
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
+FOLDER_PATH = "/IA/PRUEBAS/Auditorías Vizum CNBV y anuales"  # Carpeta actualizada según la URL proporcionada
 
 # Inicializar Dropbox
 dbx = dropbox.Dropbox(DROPBOX_TOKEN)
 
-# Inicializar Pinecone
-pinecone.init(
-    api_key=os.getenv("PINECONE_API_KEY"),
-    environment=os.getenv("PINECONE_ENVIRONMENT")
-)
-index = pinecone.Index(os.getenv("PINECONE_INDEX_NAME"))
+# Inicializar Pinecone con la nueva sintaxis
+pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
+index = pc.Index(os.getenv("PINECONE_INDEX_NAME"))
 
 def is_supported_file(filename):
     # Incluir extensiones de imagen para OCR

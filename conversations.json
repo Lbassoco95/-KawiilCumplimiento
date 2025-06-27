@@ -26,5 +26,169 @@
     "context_summary": "Conversación sobre requisitos de cumplimiento regulatorio",
     "is_active": false,
     "conversation_id": "d8db1241-a20c-40c1-9f28-0f45519089d5"
+  },
+  "1751006983.514749": {
+    "thread_ts": "1751006983.514749",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751006986.118933,
+    "last_activity": 1751007371.966364,
+    "messages": [
+      {
+        "id": "ea6e856c-fe0d-4510-a276-0ca1f250fa36",
+        "timestamp": 1751006986.119554,
+        "user_id": "",
+        "content": "hola <@U0927PSTSUS>",
+        "role": "user",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "d3fe33c6-987c-4a20-9909-4fee3c33de1a",
+        "timestamp": 1751006988.642747,
+        "user_id": "",
+        "content": "Hola, ¿en qué puedo ayudarte hoy? Estoy aquí para responder cualquier pregunta que tengas sobre regulaciones financieras o cumplimiento normativo. Si tienes alguna consulta específica, no dudes en decírmelo.",
+        "role": "assistant",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "cc6a0d9e-81c5-4d5b-bd79-54227627ad17",
+        "timestamp": 1751007001.9994571,
+        "user_id": "",
+        "content": "nos llegó este documento a vizum, por lo que necesito que verifiques contra la información que tenemos de esta empresa con qué información contamos",
+        "role": "user",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "55691819-88c9-4314-909b-0487f52d108d",
+        "timestamp": 1751007007.791726,
+        "user_id": "",
+        "content": "Para verificar la información del documento recibido contra los registros de Vizum, aquí tienes un resumen de la información que tenemos actualmente:\n\n1. **Acta Constitutiva y Estatutos**: Contamos con copias digitalizadas del acta constitutiva y las actas de asamblea de accionistas, que documentan reformas o modificaciones de los estatutos de Vizum Technologies, incluyendo designaciones y destituciones de funcionarios. Estos documentos están en el documento ABC, carpeta X.\n\n2. **Límites Internos**: Existe un escrito que detalla los límites internos aplicables para el envío o recepción de operaciones en Vizum Technologies desde el 1° de septiembre de 2023 hasta el 30 de agosto de 2024. Este documento también forma parte del documento ABC, carpeta X.\n\n3. **Presentación Corporativa**: Disponemos de una presentación en PowerPoint que describe los antecedentes de Vizum Technologies, incluyendo principales funcionarios, sector atendido, evolución del control accionario, operaciones, modelo de negocios y flujo de recursos. Esta presentación se encuentra en el mismo documento ABC, carpeta X.\n\nPara proceder con la verificación, sería útil que me especifiques el tipo de información que buscas o el contenido específico del documento que deseas contrastar. Si necesitas más detalles o tienes alguna otra consulta, por favor házmelo saber.",
+        "role": "assistant",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "a767526c-3b0d-4719-8fa9-bfaf5415e533",
+        "timestamp": 1751007051.27633,
+        "user_id": "",
+        "content": "que documentos nos faltarían",
+        "role": "user",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "9bfad02b-7732-4040-b840-779c4042629a",
+        "timestamp": 1751007058.154238,
+        "user_id": "",
+        "content": "Para completar adecuadamente el conjunto de documentos requeridos, te proporcionaré un resumen de los elementos que aún están pendientes de acuerdo con la información que tienes y lo que se ha mencionado en la hoja de requerimientos:\n\n1. **Integración del Consejo de Administración**: Este punto está actualmente incompleto. Asegúrate de tener la documentación actualizada sobre la composición del Consejo de Administración de Vizum Technologies.\n\n2. **Documentación de cumplimiento regulatorio:**\n   - **Manual de PLD/FT y Metodología de Evaluación de Riesgos**: Asegúrate de tener la versión editable y el acta de aprobación de la última versión.\n   - **Evidencia de implementación de la Metodología de Evaluación de Riesgos**: Incluye resultados o acciones implementadas a partir de este proceso.\n\n3. **Documentación relacionada con la CNBV:**\n   - **Copia digitalizada del manual de cumplimiento**: Proporcionar una copia del acuse de envío a la CNBV.\n   - **Evidencia de autorización para operaciones no presenciales**: Si aplica, necesitas la autorización emitida por la CNBV para operaciones no presenciales.\n   - **Acuse del informe previo de operaciones no presenciales**: Asegúrate de contar con la copia digitalizada del acuse emitido por la CNBV.\n\nEstos son los documentos que, según la información proporcionada, parecen estar pendientes o no iniciados. Es importante revisar si hay otros documentos específicos que puedan ser necesarios de acuerdo a la normativa vigente o los requerimientos particulares de la CNBV. Por favor, verifica si se requiere alguna otra documentación adicional que no esté listada aquí. Si necesitas más detalles o tienes otras consultas, no dudes en decírmelo.",
+        "role": "assistant",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "5302c0c1-615f-4da8-bc97-411a35077709",
+        "timestamp": 1751007201.335284,
+        "user_id": "",
+        "content": "hasta cuándo tenemos para responder?",
+        "role": "user",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "31a4850f-c840-4b2e-aedb-42cff857fbab",
+        "timestamp": 1751007206.341711,
+        "user_id": "",
+        "content": "Con base en el oficio 221/DGPORPIA-74947/2024 emitido por la CNBV, Vizum tiene un plazo inicial de diez días hábiles para responder al requerimiento, contados a partir del día hábil siguiente a la notificación. Dado que el oficio está fechado el 27 de septiembre de 2024, y si asumimos que la notificación surtió efectos al día siguiente, el plazo inicial concluiría el 11 de octubre de 2024.\n\nAdicionalmente, Vizum ha solicitado una prórroga de diez días hábiles adicionales, que comenzaría después del término del plazo inicial. Si la CNBV concede esta prórroga, el nuevo plazo para responder sería hasta el 25 de octubre de 2024.\n\nEs importante verificar si la CNBV ha confirmado la aceptación de la prórroga. Además, asegúrate de enviar toda la documentación requerida de manera digital, de acuerdo con las instrucciones especificadas en el oficio, utilizando los correos electrónicos proporcionados por la CNBV.\n\nSi tienes alguna otra duda o necesitas más detalles, estaré aquí para ayudarte.",
+        "role": "assistant",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "a0de3118-5156-481e-b956-c907a43fa9c7",
+        "timestamp": 1751007366.315017,
+        "user_id": "",
+        "content": "el oficio tiene esta fecha 23\n/0\n6\n/202\n5",
+        "role": "user",
+        "thread_ts": "1751006983.514749"
+      },
+      {
+        "id": "16cdd6fd-e2d4-404a-b66e-6bb781647f06",
+        "timestamp": 1751007371.966419,
+        "user_id": "",
+        "content": "Entiendo que ha habido una confusión con la fecha del oficio que mencionas. Según la información proporcionada, el oficio tiene la fecha 23/06/2025. Esto significa que cualquier plazo de respuesta que debas cumplir debería calcularse a partir de esa fecha.\n\nPara determinar el plazo exacto, si no se indica lo contrario en el oficio, generalmente el conteo de días hábiles comienza al día siguiente de la fecha de recepción del documento. Si el oficio se recibió el mismo día de la fecha indicada, el conteo comenzaría el 24 de junio de 2025. Si tienes un plazo de diez días hábiles para responder, el plazo inicial concluiría el 8 de julio de 2025, siempre y cuando no haya días festivos que afecten este conteo.\n\nSi se ha solicitado una prórroga y esta es concedida, el plazo se extendería por los días adicionales especificados, a partir del final del plazo inicial.\n\nEs importante verificar cualquier instrucción o detalle específico en el oficio que pueda afectar los plazos y asegurarse de que cualquier solicitud de prórroga haya sido confirmada por la autoridad correspondiente. Si tienes más dudas o necesitas asistencia adicional, por favor házmelo saber.",
+        "role": "assistant",
+        "thread_ts": "1751006983.514749"
+      }
+    ],
+    "context_summary": "En la conversación, se discutió la importancia de calcular correctamente los plazos de respuesta a partir de la fecha indicada en un oficio, que es el 23 de junio de 2025. Se destacó que, generalmente, el conteo de días hábiles comienza al día siguiente de la recepción del documento, y se mencionó la posibilidad de solicitar una prórroga, la cual debe ser confirmada por la autoridad correspondiente. Además, se recomendó verificar cualquier instrucción específica en el oficio que pudiera afectar los plazos.",
+    "is_active": false,
+    "conversation_id": "a02784d0-c5b4-412b-9feb-60f89c9bfbda"
+  },
+  "1751007519.536289": {
+    "thread_ts": "1751007519.536289",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751007520.247146,
+    "last_activity": 1751007524.414923,
+    "messages": [
+      {
+        "id": "e2e7f4f3-27f8-43c5-b022-11d68ecc8807",
+        "timestamp": 1751007520.249244,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> ¿Qué información tenemos sobre la empresa Vizum Technologies?",
+        "role": "user",
+        "thread_ts": "1751007519.536289"
+      },
+      {
+        "id": "d1e441fb-0778-4105-929d-217d8bb55ae2",
+        "timestamp": 1751007520.877721,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> ¿Qué información tenemos sobre la empresa Vizum Technologies?",
+        "role": "user",
+        "thread_ts": "1751007519.536289"
+      },
+      {
+        "id": "0c27641c-65d5-4c50-838a-323306295f17",
+        "timestamp": 1751007524.32796,
+        "user_id": "",
+        "content": "En respuesta a tu consulta sobre Vizum Technologies, contamos con una presentación en formato PowerPoint que ofrece una visión integral y actualizada de la empresa. Este documento detalla los antecedentes de la empresa, sus principales funcionarios, el sector que atiende, la evolución del control accionario hasta la fecha, las operaciones que realiza, su modelo de negocios y el flujo de recursos. Esta presentación está disponible en el documento titulado \"ABC\" y se encuentra alojada en la carpeta X.\n\nAdicionalmente, Vizum Technologies S.A.P.I. de C.V. está ubicada en Av. Paseo de la Reforma 2693, 702 B, Lomas de Bezares, Miguel Hidalgo, Ciudad de México, C.P. 11910, México. Gonzalo Rivera Curbelo es el representante legal de la empresa.\n\nSi necesitas más detalles o acceso a la documentación, te recomiendo consultar el documento \"ABC\" directamente en la carpeta mencionada. Si tienes alguna otra pregunta o requieres información adicional sobre Vizum Technologies, no dudes en informarme.",
+        "role": "assistant",
+        "thread_ts": "1751007519.536289"
+      },
+      {
+        "id": "eb6c2782-dc5a-4b83-8ddf-feb0038d3698",
+        "timestamp": 1751007524.4150012,
+        "user_id": "",
+        "content": "Para obtener información detallada sobre Vizum Technologies, puedes consultar la presentación en PowerPoint que hemos agregado recientemente. Este documento proporciona un análisis integral de la empresa, incluyendo sus antecedentes, principales funcionarios, sector en el que opera, evolución del control accionario, operaciones actuales, modelo de negocios y flujo de recursos. La presentación está disponible en el documento ABC, que se encuentra en la carpeta X.\n\nAdemás, algunos datos clave sobre Vizum Technologies son:\n\n- **Razón Social:** Vizum Technologies S.A.P.I. de C.V.\n- **Dirección:** Av. Paseo de la Reforma 2693 702 B, Lomas de Bezares, Miguel Hidalgo, Ciudad de México, C.P. 11910, México.\n- **Representante Legal:** Gonzalo Rivera Curbelo.\n\nPara acceder a información más específica o adicional, te recomiendo revisar el mencionado documento ABC. Si necesitas más detalles o asistencia adicional, no dudes en consultarme.",
+        "role": "assistant",
+        "thread_ts": "1751007519.536289"
+      }
+    ],
+    "context_summary": "En la conversación se destaca que Vizum Technologies S.A.P.I. de C.V. cuenta con una presentación en PowerPoint que ofrece un análisis detallado de la empresa, incluyendo su estructura accionaria, operaciones y modelo de negocio. La presentación está disponible en el documento ABC, ubicado en la carpeta X, y se menciona que el representante legal es Gonzalo Rivera Curbelo.",
+    "is_active": false,
+    "conversation_id": "fa9e4d88-4634-4fd8-a19a-0bdb8f4892e7"
+  },
+  "1751007907.301589": {
+    "thread_ts": "1751007907.301589",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751007908.870371,
+    "last_activity": 1751007917.673899,
+    "messages": [
+      {
+        "id": "0a391f1b-9d1a-4790-b729-875022c039db",
+        "timestamp": 1751007908.872968,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> ¿Qué información tenemos sobre la empresa Vizum Technologies?",
+        "role": "user",
+        "thread_ts": "1751007907.301589"
+      },
+      {
+        "id": "0ad99769-a6dd-4956-936c-5f8a8f46579f",
+        "timestamp": 1751007917.673965,
+        "user_id": "",
+        "content": "Vizum Technologies S.A.P.I. de C.V. es una empresa ubicada en Ciudad de México, específicamente en Av. Paseo de la Reforma 2693 702 B, Lomas de Bezares, Miguel Hidalgo, C.P. 11910. La empresa está registrada bajo el RFC VTE221209RZ4.\n\nPara obtener una visión integral y actualizada de la empresa, se dispone de una presentación en formato PowerPoint que describe detalladamente los antecedentes, principales funcionarios, el sector atendido, la evolución del control accionario hasta la fecha, las operaciones que realiza, su modelo de negocios y el flujo de recursos. Esta presentación está disponible en el documento ABC, alojado en la carpeta X. La información está actualizada a octubre de 2024 y fue proporcionada por Gonzalo Rivera Curbelo, representante legal de Vizum Technologies.\n\nAdemás, Vizum Technologies ha participado en operaciones financieras documentadas, como depósitos realizados vía SPEI. Por ejemplo, se registró un depósito completo de 2627776 MXN el 20 de agosto de 2024.\n\nSi necesitas más detalles o tienes alguna otra pregunta sobre Vizum Technologies, por favor házmelo saber.",
+        "role": "assistant",
+        "thread_ts": "1751007907.301589"
+      }
+    ],
+    "context_summary": "Vizum Technologies S.A.P.I. de C.V., ubicada en Ciudad de México, está registrada bajo el RFC VTE221209RZ4. La empresa cuenta con una presentación detallada sobre su estructura y operaciones, actualizada a octubre de 2024, disponible en el documento ABC. Además, ha realizado operaciones financieras documentadas, como un depósito de 2,627,776 MXN vía SPEI el 20 de agosto de 2024.",
+    "is_active": false,
+    "conversation_id": "cb5836e5-b0f0-4673-b963-68085578c756"
   }
 }

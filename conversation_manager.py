@@ -38,7 +38,7 @@ class Conversation:
 class ConversationManager:
     """Gestor de conversaciones con memoria y cierre automático"""
     
-    def __init__(self, storage_file: str = "conversations.json", auto_close_minutes: int = 3):
+    def __init__(self, storage_file: str = "conversations.json", auto_close_minutes: int = 5):
         self.storage_file = storage_file
         self.auto_close_minutes = auto_close_minutes
         self.conversations: Dict[str, Conversation] = {}
@@ -203,4 +203,107 @@ class ConversationManager:
             "active_conversations": active_count,
             "total_conversations": total_count,
             "storage_file": self.storage_file
-        } 
+        }
+    
+    def analyze_conversation_patterns(self) -> Dict:
+        """Analizar patrones en las conversaciones para aprendizaje"""
+        try:
+            all_messages = []
+            user_topics = {}
+            
+            for conv in self.conversations.values():
+                for msg in conv.messages:
+                    if msg.role == "user":
+                        all_messages.append(msg.content)
+                        
+                        # Agrupar por usuario
+                        if msg.user_id not in user_topics:
+                            user_topics[msg.user_id] = []
+                        user_topics[msg.user_id].append(msg.content)
+            
+            # Análisis básico de patrones
+            patterns = {
+                "total_user_messages": len(all_messages),
+                "unique_users": len(user_topics),
+                "avg_messages_per_user": len(all_messages) / len(user_topics) if user_topics else 0,
+                "most_active_users": sorted(
+                    [(user_id, len(messages)) for user_id, messages in user_topics.items()],
+                    key=lambda x: x[1],
+                    reverse=True
+                )[:5]
+            }
+            
+            return patterns
+            
+        except Exception as e:
+            logger.error(f"Error analizando patrones de conversación: {e}")
+            return {}
+    
+    def get_user_learning_context(self, user_id: str) -> str:
+        """Obtener contexto de aprendizaje específico del usuario"""
+        try:
+            user_messages = []
+            
+            # Obtener todos los mensajes del usuario
+            for conv in self.conversations.values():
+                for msg in conv.messages:
+                    if msg.user_id == user_id and msg.role == "user":
+                        user_messages.append(msg.content)
+            
+            if not user_messages:
+                return ""
+            
+            # Crear contexto de aprendizaje
+            recent_messages = user_messages[-10:]  # Últimos 10 mensajes
+            learning_context = f"""
+            Historial de consultas del usuario {user_id}:
+            {chr(10).join([f"- {msg}" for msg in recent_messages])}
+            
+            Este usuario ha realizado {len(user_messages)} consultas en total.
+            """
+            
+            return learning_context
+            
+        except Exception as e:
+            logger.error(f"Error obteniendo contexto de aprendizaje: {e}")
+            return ""
+    
+    def get_conversation_insights(self, thread_ts: str) -> Dict:
+        """Obtener insights de una conversación específica"""
+        if thread_ts not in self.conversations:
+            return {}
+        
+        conv = self.conversations[thread_ts]
+        
+        insights = {
+            "duration_minutes": (conv.last_activity - conv.created_at) / 60,
+            "message_count": len(conv.messages),
+            "user_messages": len([m for m in conv.messages if m.role == "user"]),
+            "assistant_messages": len([m for m in conv.messages if m.role == "assistant"]),
+            "topics_discussed": self._extract_topics_from_messages(conv.messages)
+        }
+        
+        return insights
+    
+    def _extract_topics_from_messages(self, messages: List[Message]) -> List[str]:
+        """Extraer temas discutidos de los mensajes"""
+        try:
+            # Palabras clave comunes en cumplimiento
+            compliance_keywords = [
+                "cumplimiento", "regulatorio", "auditoría", "riesgo", "política",
+                "procedimiento", "norma", "ley", "regulación", "documento",
+                "reporte", "control", "supervisión", "verificación"
+            ]
+            
+            all_text = " ".join([msg.content.lower() for msg in messages])
+            found_topics = []
+            
+            for keyword in compliance_keywords:
+                if keyword in all_text:
+                    found_topics.append(keyword)
+            
+            return found_topics
+            
+        except Exception as e:
+            logger.error(f"Error extrayendo temas: {e}")
+            return [] 

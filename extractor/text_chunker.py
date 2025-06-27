@@ -1,6 +1,18 @@
 import tiktoken  # type: ignore
 import re
 from typing import List
+import os
+import certifi
+import ssl
+
+# Configurar SSL para MacOS
+os.environ["SSL_CERT_FILE"] = certifi.where()
+os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
+
+# Configurar contexto SSL
+ssl_context = ssl.create_default_context(cafile=certifi.where())
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
 
 def chunk_text(text: str, max_tokens: int = 500) -> List[str]:
     """
@@ -112,9 +124,15 @@ def get_embedding(text, model="text-embedding-3-small", api_key=None):
     import os
     if api_key is None:
         api_key = os.getenv("OPENAI_API_KEY")
-    client = OpenAI(api_key=api_key)
-    response = client.embeddings.create(
-        model=model,
-        input=[text]
-    )
-    return response.data[0].embedding 
+    
+    try:
+        client = OpenAI(api_key=api_key)
+        response = client.embeddings.create(
+            model=model,
+            input=[text]
+        )
+        return response.data[0].embedding
+    except Exception as e:
+        print(f"Error obteniendo embedding: {e}")
+        # Retornar un embedding vacío en caso de error
+        return [0.0] * 1536  # Dimensiones del modelo text-embedding-3-small 

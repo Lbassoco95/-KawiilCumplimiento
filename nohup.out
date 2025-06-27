@@ -1,0 +1,387 @@
+Traceback (most recent call last):
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/slack_bot.py", line 1, in <module>
+    from slack_bolt import App
+ModuleNotFoundError: No module named 'slack_bolt'
+INFO:conversation_manager:Cargadas 1 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: beb1a554-9189-4391-b251-6b76ff4b9639)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: beb1a554-9189-4391-b251-6b76ff4b9639)
+INFO:conversation_manager:Cargadas 1 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: 1191a86b-f7f9-47ee-8619-39246c0f2522)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: 1191a86b-f7f9-47ee-8619-39246c0f2522)
+INFO:conversation_manager:Cargadas 1 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: 7d6823a1-a8b0-4373-8c32-2840556859da)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: 7d6823a1-a8b0-4373-8c32-2840556859da)
+INFO:conversation_manager:Cargadas 1 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: 19b9617f-9d6e-43b3-a218-87727edecf2e)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: 19b9617f-9d6e-43b3-a218-87727edecf2e)
+INFO:conversation_manager:Nueva conversación creada: 1751006703.015659
+INFO:conversation_manager:Mensaje agregado a conversación 1751006703.015659
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006703.015659
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751006703.015659
+INFO:conversation_manager:Cargadas 1 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: 60f476cb-ed2c-4edf-9552-19e9642c63d8)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: 60f476cb-ed2c-4edf-9552-19e9642c63d8)
+INFO:conversation_manager:Nueva conversación creada: 1751006983.514749
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751006983.514749
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Nueva conversación creada: 1751007519.536289
+INFO:conversation_manager:Mensaje agregado a conversación 1751007519.536289
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751007519.536289
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751007519.536289
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751007519.536289
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751006983.514749
+INFO:conversation_manager:Conversación cerrada: 1751007519.536289
+INFO:conversation_manager:Conversación cerrada: 1751007519.536289
+INFO:conversation_manager:Nueva conversación creada: 1751007907.301589
+INFO:conversation_manager:Mensaje agregado a conversación 1751007907.301589
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751007907.301589
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751007907.301589
+OPENAI_API_KEY: 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
+Traceback (most recent call last):
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/slack_bot.py", line 61, in <module>
+    assistant = pc.assistant.create_assistant(
+        assistant_name="vizumcumplimiento",
+        instructions=ASSISTANT_INSTRUCTIONS,
+        timeout=30
+    )
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/assistant/assistant.py", line 116, in create_assistant
+    assistant = self._assistant_control_api.create_assistant(inline_object=inline_object)
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 772, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api/manage_assistants_api.py", line 109, in __create_assistant
+    return self.call_with_http_info(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 834, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings['endpoint_path'], self.settings['http_method'],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        _host=_host,
+        ^^^^^^^^^^^^
+        collection_formats=params['collection_format'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 409, in call_api
+    return self.__call_api(resource_path, method,
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+                           path_params, query_params, header_params,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                           _preload_content, _request_timeout, _host,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           _check_type)
+                           ^^^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 203, in __call_api
+    raise e
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 196, in __call_api
+    response_data = self.request(
+        method, url, query_params=query_params, headers=header_params,
+        post_params=post_params, body=body,
+        _preload_content=_preload_content,
+        _request_timeout=_request_timeout)
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 455, in request
+    return self.rest_client.POST(url,
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^
+                                 query_params=query_params,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                                 _request_timeout=_request_timeout,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                 body=body)
+                                 ^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/rest.py", line 302, in POST
+    return self.request("POST", url,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^
+                        headers=headers,
+                        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                        _request_timeout=_request_timeout,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        body=body)
+                        ^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/rest.py", line 261, in request
+    raise PineconeApiException(http_resp=r)
+pinecone_plugins.assistant.control.core.client.exceptions.PineconeApiException: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-cloud-trace-context': '5f9c10a9530ae1df84d3fbc1abf4b75e', 'date': 'Fri, 27 Jun 2025 07:16:02 GMT', 'server': 'Google Frontend', 'Content-Length': '85', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"ALREADY_EXISTS","message":"Assistant already exists"},"status":409}
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/slack_bot.py", line 68, in <module>
+    assistant = pc.assistant.get_assistant("vizumcumplimiento")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Assistant' object has no attribute 'get_assistant'. Did you mean: 'create_assistant'?
+INFO:conversation_manager:Cargadas 4 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: f6b24ddb-b11e-4af6-988b-1a5645fe63f0)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: f6b24ddb-b11e-4af6-988b-1a5645fe63f0)
+INFO:conversation_manager:Nueva conversación creada: 1751009348.871479
+INFO:conversation_manager:Mensaje agregado a conversación 1751009348.871479
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751009348.871479
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751009348.871479
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751009348.871479
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751009348.871479
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751009348.871479
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Nueva conversación creada: 1751009020.694599
+INFO:conversation_manager:Mensaje agregado a conversación 1751009020.694599
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751009020.694599
+INFO:conversation_manager:Mensaje agregado a conversación 1751009020.694599
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751009020.694599
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751009348.871479
+INFO:conversation_manager:Conversación cerrada: 1751009020.694599
+INFO:conversation_manager:Conversación cerrada: 1751009020.694599
+OPENAI_API_KEY: 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
+Traceback (most recent call last):
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/slack_bot.py", line 61, in <module>
+    assistant = pc.assistant.create_assistant(
+        assistant_name="vizumcumplimiento",
+        instructions=ASSISTANT_INSTRUCTIONS,
+        timeout=30
+    )
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/assistant/assistant.py", line 116, in create_assistant
+    assistant = self._assistant_control_api.create_assistant(inline_object=inline_object)
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 772, in __call__
+    return self.callable(self, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api/manage_assistants_api.py", line 109, in __create_assistant
+    return self.call_with_http_info(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 834, in call_with_http_info
+    return self.api_client.call_api(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.settings['endpoint_path'], self.settings['http_method'],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        _host=_host,
+        ^^^^^^^^^^^^
+        collection_formats=params['collection_format'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 409, in call_api
+    return self.__call_api(resource_path, method,
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+                           path_params, query_params, header_params,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                           _preload_content, _request_timeout, _host,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           _check_type)
+                           ^^^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 203, in __call_api
+    raise e
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 196, in __call_api
+    response_data = self.request(
+        method, url, query_params=query_params, headers=header_params,
+        post_params=post_params, body=body,
+        _preload_content=_preload_content,
+        _request_timeout=_request_timeout)
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/api_client.py", line 455, in request
+    return self.rest_client.POST(url,
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^
+                                 query_params=query_params,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                                 _request_timeout=_request_timeout,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                 body=body)
+                                 ^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/rest.py", line 302, in POST
+    return self.request("POST", url,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^
+                        headers=headers,
+                        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+                        _request_timeout=_request_timeout,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        body=body)
+                        ^^^^^^^^^^
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/venv/lib/python3.13/site-packages/pinecone_plugins/assistant/control/core/client/rest.py", line 261, in request
+    raise PineconeApiException(http_resp=r)
+pinecone_plugins.assistant.control.core.client.exceptions.PineconeApiException: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-cloud-trace-context': 'c0cad58c8e7e91e0846e947ce32530f8', 'date': 'Fri, 27 Jun 2025 07:35:07 GMT', 'server': 'Google Frontend', 'Content-Length': '85', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"ALREADY_EXISTS","message":"Assistant already exists"},"status":409}
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/slack_bot.py", line 68, in <module>
+    assistant = pc.assistant.api.get_assistant("vizumcumplimiento")
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'Assistant' object has no attribute 'api'
+Traceback (most recent call last):
+  File "/Users/leopoldobassoconova/Library/Mobile Documents/com~apple~CloudDocs/REPOSITORIOS/KawiilVizumCumplimiento/slack_bot.py", line 1, in <module>
+    from slack_bolt import App
+ModuleNotFoundError: No module named 'slack_bolt'
+INFO:conversation_manager:Cargadas 4 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: 9e3220a5-4ee8-494d-bdb0-0a4b5cb26a8a)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: 9e3220a5-4ee8-494d-bdb0-0a4b5cb26a8a)
+INFO:conversation_manager:Cargadas 4 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: 05c16ed1-7c19-4762-81ef-c32f19bfec64)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: 05c16ed1-7c19-4762-81ef-c32f19bfec64)
+INFO:conversation_manager:Cargadas 4 conversaciones
+INFO:slack_bolt.App:A new session has been established (session id: cf031d46-3bba-4caf-895d-02631aaf7ca6)
+INFO:slack_bolt.App:⚡️ Bolt app is running!
+INFO:slack_bolt.App:Starting to receive messages from a new connection (session id: cf031d46-3bba-4caf-895d-02631aaf7ca6)
+INFO:conversation_manager:Nueva conversación creada: 1751013129.945129
+INFO:conversation_manager:Mensaje agregado a conversación 1751013129.945129
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751013129.945129
+ERROR:__main__:Error actualizando resumen de conversación: [Errno 60] Operation timed out
+INFO:conversation_manager:Conversación cerrada: 1751013129.945129
+INFO:conversation_manager:Conversación cerrada por inactividad: 1751013129.945129
+INFO:conversation_manager:Nueva conversación creada: 1751013519.169849
+INFO:conversation_manager:Mensaje agregado a conversación 1751013519.169849
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751013519.169849
+INFO:conversation_manager:Conversación cerrada: 1751013129.945129
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Nueva conversación creada: 1751013674.520269
+INFO:conversation_manager:Mensaje agregado a conversación 1751013674.520269
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751013674.520269
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751013519.169849
+INFO:conversation_manager:Conversación cerrada: 1751013674.520269
+INFO:conversation_manager:Nueva conversación creada: 1751014264.906269
+INFO:conversation_manager:Mensaje agregado a conversación 1751014264.906269
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751014264.906269
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751014264.906269
+INFO:conversation_manager:Conversación cerrada por inactividad: 1751014264.906269
+INFO:conversation_manager:Conversación cerrada: 1751014264.906269
+INFO:conversation_manager:Nueva conversación creada: 1751014583.169279
+INFO:conversation_manager:Mensaje agregado a conversación 1751014583.169279
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751014583.169279
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751014583.169279
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751014583.169279
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Nueva conversación creada: 1751014771.374169
+INFO:conversation_manager:Mensaje agregado a conversación 1751014771.374169
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751014771.374169
+INFO:conversation_manager:Mensaje agregado a conversación 1751014771.374169
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751014771.374169
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751014583.169279
+INFO:conversation_manager:Conversación cerrada: 1751014771.374169
+INFO:conversation_manager:Conversación cerrada: 1751014771.374169
+INFO:conversation_manager:Nueva conversación creada: 1751015049.014799
+INFO:conversation_manager:Mensaje agregado a conversación 1751015049.014799
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751015049.014799
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751015049.014799
+INFO:conversation_manager:Nueva conversación creada: 1751017330.355919
+INFO:conversation_manager:Mensaje agregado a conversación 1751017330.355919
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751017330.355919
+INFO:conversation_manager:Mensaje agregado a conversación 1751017330.355919
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751017330.355919
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751017330.355919
+INFO:conversation_manager:Conversación cerrada: 1751017330.355919
+INFO:conversation_manager:Nueva conversación creada: 1751018535.434109
+INFO:conversation_manager:Mensaje agregado a conversación 1751018535.434109
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751018535.434109
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751018535.434109
+INFO:conversation_manager:Nueva conversación creada: 1751019235.562539
+INFO:conversation_manager:Mensaje agregado a conversación 1751019235.562539
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751019235.562539
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751019235.562539
+INFO:conversation_manager:Nueva conversación creada: 1751019874.922379
+INFO:conversation_manager:Mensaje agregado a conversación 1751019874.922379
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751019874.922379
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751019874.922379
+INFO:conversation_manager:Nueva conversación creada: 1751020112.417619
+INFO:conversation_manager:Mensaje agregado a conversación 1751020112.417619
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751020112.417619
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Nueva conversación creada: 1751020139.870419
+INFO:conversation_manager:Mensaje agregado a conversación 1751020139.870419
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751020139.870419
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Mensaje agregado a conversación 1751020139.870419
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751020139.870419
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751020112.417619
+INFO:conversation_manager:Conversación cerrada: 1751020139.870419
+INFO:conversation_manager:Nueva conversación creada: 1751020388.118819
+INFO:conversation_manager:Mensaje agregado a conversación 1751020388.118819
+ERROR:__main__:Error con Pinecone Assistant + OpenAI: 'NoneType' object is not callable
+INFO:conversation_manager:Mensaje agregado a conversación 1751020388.118819
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:conversation_manager:Conversación cerrada: 1751020388.118819
