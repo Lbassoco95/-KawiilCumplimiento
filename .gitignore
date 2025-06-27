@@ -1,0 +1,35 @@
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Archivos de configuración con secretos
+config_env_example.txt
+.env
+*.env
+
+# Archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de conversación (pueden contener datos sensibles)
+conversations.json
+
+# Archivos de prueba temporales
+test_*.py
+ejemplo_*.py
+
+# Archivos de Dropbox temporales
+*.tmp
+*.temp 
