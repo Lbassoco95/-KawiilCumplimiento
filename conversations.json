@@ -1,0 +1,30 @@
+{
+  "test_thread_123": {
+    "thread_ts": "test_thread_123",
+    "channel_id": "test_channel",
+    "user_id": "test_user",
+    "created_at": 1750998217.449942,
+    "last_activity": 1750998217.4502661,
+    "messages": [
+      {
+        "id": "6375dd7c-ec46-4cb9-8594-e213df4c1e9d",
+        "timestamp": 1750998217.450194,
+        "user_id": "test_user",
+        "content": "¿Cuáles son los requisitos de cumplimiento?",
+        "role": "user",
+        "thread_ts": "test_thread_123"
+      },
+      {
+        "id": "cf4cb4ae-81f3-4fa7-8d0f-248cda8c7ad6",
+        "timestamp": 1750998217.4502778,
+        "user_id": "test_user",
+        "content": "Los requisitos incluyen...",
+        "role": "assistant",
+        "thread_ts": "test_thread_123"
+      }
+    ],
+    "context_summary": "Conversación sobre requisitos de cumplimiento regulatorio",
+    "is_active": false,
+    "conversation_id": "d8db1241-a20c-40c1-9f28-0f45519089d5"
+  }
+}

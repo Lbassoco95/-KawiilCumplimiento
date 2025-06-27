@@ -1,0 +1,7 @@
+# Configuración de OpenAI
+OPENAI_API_KEY=tu-api-key-de-openai-aqui
+
+# Configuración de Pinecone
+PINECONE_API_KEY=tu-api-key-de-pinecone-aqui
+PINECONE_ENVIRONMENT=tu-environment-aqui
+PINECONE_INDEX_NAME=tu-index-name-aqui 
