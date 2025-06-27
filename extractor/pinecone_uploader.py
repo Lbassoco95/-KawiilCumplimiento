@@ -34,29 +34,29 @@ def upload_chunks_to_pinecone(chunks: List[str], metadata: Dict) -> bool:
         client = OpenAI(api_key=openai_api_key)
         
         # Configurar Pinecone (nueva API)
-        pc = pinecone.Pinecone(api_key=pinecone_api_key)
+        pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
         
         # Verificar si el índice existe y su dimensión
-        existing_indexes = {index.name: index for index in pc.list_indexes()}
+        existing_indexes = pinecone.list_indexes()
         if pinecone_index_name in existing_indexes:
-            index_info = existing_indexes[pinecone_index_name]
+            index_info = pinecone.describe_index(pinecone_index_name)
             if hasattr(index_info, 'dimension') and index_info.dimension != 1536:
                 print(f"Eliminando índice '{pinecone_index_name}' con dimensión incorrecta ({index_info.dimension})...")
-                pc.delete_index(pinecone_index_name)
+                pinecone.delete_index(pinecone_index_name)
                 print(f"Índice '{pinecone_index_name}' eliminado.")
         
         # Crear el índice si no existe
-        existing_indexes = {index.name: index for index in pc.list_indexes()}
+        existing_indexes = pinecone.list_indexes()
         if pinecone_index_name not in existing_indexes:
             print(f"Creando índice: {pinecone_index_name}")
-            pc.create_index(
+            pinecone.create_index(
                 name=pinecone_index_name,
                 dimension=1536,  # text-embedding-3-small dimension
                 metric='cosine'
             )
         
         # Obtener el índice
-        index = pc.Index(pinecone_index_name)
+        index = pinecone.Index(pinecone_index_name)
         
         # Generar embeddings para todos los chunks
         print(f"Generando embeddings para {len(chunks)} chunks...")
@@ -77,7 +77,7 @@ def upload_chunks_to_pinecone(chunks: List[str], metadata: Dict) -> bool:
             
             # Preparar metadatos del vector
             vector_metadata = {
-                'text': chunk,
+                'texto': chunk,  # Cambiado de 'text' a 'texto' para consistencia
                 'chunk_index': i,
                 'total_chunks': len(chunks),
                 'cliente': metadata.get('cliente', ''),

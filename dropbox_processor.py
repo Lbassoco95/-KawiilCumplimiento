@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from extractor.text_chunker import chunk_text, get_embedding
 from extractor.extractor_ocr import needs_ocr, extract_text_with_ocr_if_needed
 from utils.text_extractor import extract_text_from_file
-from pinecone import Pinecone
+import pinecone
 from uuid import uuid4
 import logging
 
@@ -22,9 +22,12 @@ FOLDER_PATH = "/IA/PRUEBAS/Auditorías Vizum CNBV y anuales"
 # Inicializar Dropbox
 dbx = dropbox.Dropbox(DROPBOX_TOKEN)
 
-# Inicializar Pinecone (nueva API)
-pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"), environment=os.getenv("PINECONE_ENVIRONMENT"))
-index = pc.Index(INDEX_NAME)
+# Inicializar Pinecone
+pinecone.init(
+    api_key=os.getenv("PINECONE_API_KEY"),
+    environment=os.getenv("PINECONE_ENVIRONMENT")
+)
+index = pinecone.Index(os.getenv("PINECONE_INDEX_NAME"))
 
 def is_supported_file(filename):
     # Incluir extensiones de imagen para OCR

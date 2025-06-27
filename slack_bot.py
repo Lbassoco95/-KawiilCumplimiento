@@ -3,7 +3,7 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from pinecone import Pinecone
+import pinecone
 from extractor.text_chunker import get_embedding, chunk_text
 from extractor.pinecone_uploader import query_pinecone
 from extractor.extractor_ocr import needs_ocr, extract_text_with_ocr_if_needed
@@ -26,8 +26,14 @@ logger = logging.getLogger(__name__)
 # Inicializa clientes
 app = App(token=os.getenv("SLACK_BOT_TOKEN"), signing_secret=os.getenv("SLACK_SIGNING_SECRET"))
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"), environment=os.getenv("PINECONE_ENVIRONMENT"))
-index = pc.Index("vizum-chieff")
+
+# Inicializa Pinecone antes de usarlo
+pinecone.init(
+    api_key=os.getenv("PINECONE_API_KEY"),
+    environment=os.getenv("PINECONE_ENVIRONMENT")
+)
+# Cuando necesites el índice:
+index = pinecone.Index(os.getenv("PINECONE_INDEX_NAME"))
 
 # Inicializar gestores
 conversation_manager = ConversationManager(auto_close_minutes=3)

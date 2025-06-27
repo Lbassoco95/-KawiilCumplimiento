@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from pinecone import Pinecone
+import pinecone
 from extractor.text_chunker import get_embedding
 from extractor.pinecone_uploader import query_pinecone
 
@@ -18,8 +18,11 @@ def test_bot_functionality():
         print("✅ OpenAI inicializado")
         
         print("2. Inicializando Pinecone...")
-        pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"), environment=os.getenv("PINECONE_ENVIRONMENT"))
-        index = pc.Index("vizum-chieff")
+        pinecone.init(
+            api_key=os.getenv("PINECONE_API_KEY"),
+            environment=os.getenv("PINECONE_ENVIRONMENT")
+        )
+        index = pinecone.Index(os.getenv("PINECONE_INDEX_NAME"))
         print("✅ Pinecone inicializado")
         
         print("3. Probando consulta de prueba...")
