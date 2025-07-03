@@ -11,7 +11,10 @@ PyPDF2==3.0.1
 pytesseract==0.3.10
 Pillow==10.1.0
 pdf2image==1.16.3
-dropbox==11.36.2
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+google-api-python-client==2.108.0
 PyMuPDF==1.23.8
 tiktoken==0.5.2
 httpx==0.25.2

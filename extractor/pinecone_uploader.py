@@ -7,6 +7,7 @@ import uuid
 from datetime import datetime
 import certifi
 import ssl
+import openai
 
 # Configurar SSL para MacOS
 os.environ["SSL_CERT_FILE"] = certifi.where()
@@ -19,6 +20,8 @@ ssl_context.verify_mode = ssl.CERT_NONE
 
 # Cargar variables de entorno desde .env
 load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def upload_chunks_to_pinecone(chunks: List[str], metadata: Dict) -> bool:
     """
@@ -97,6 +100,10 @@ def upload_chunks_to_pinecone(chunks: List[str], metadata: Dict) -> bool:
                 'timestamp': datetime.now().isoformat()
             }
             
+            # Extraer metadatos enriquecidos usando OpenAI
+            metadatos_enriquecidos = extraer_metadatos_con_openai(chunk)
+            vector_metadata.update(metadatos_enriquecidos)
+            
             # Crear vector para Pinecone (nueva API)
             vector = {
                 'id': vector_id,
@@ -149,4 +156,33 @@ def query_pinecone(index, embedding, top_k=5, namespace=None):
     }
     if namespace:
         query_kwargs["namespace"] = namespace
-    return index.query(**query_kwargs) 
+    return index.query(**query_kwargs)
+
+# Función para extraer metadatos usando OpenAI
+def extraer_metadatos_con_openai(texto):
+    prompt = (
+        "Extrae los siguientes metadatos del texto de un documento. "
+        "Devuelve el resultado en formato JSON con las claves: cliente, tipo_documento, fecha, autor, categoria, palabras_clave. "
+        "Si algún dato no está presente, deja el valor como null.\n"
+        f"Texto: {texto[:2000]}"
+    )
+    try:
+        response = openai.ChatCompletion.create(
+            api_key=OPENAI_API_KEY,
+            model="gpt-4",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=300,
+            temperature=0.0
+        )
+        import json
+        content = response.choices[0].message.content
+        # Intentar extraer JSON del resultado
+        start = content.find('{')
+        end = content.rfind('}') + 1
+        if start != -1 and end != -1:
+            return json.loads(content[start:end])
+        else:
+            return {}
+    except Exception as e:
+        print(f"Error extrayendo metadatos con OpenAI: {e}")
+        return {} 

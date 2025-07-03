@@ -190,5 +190,193 @@
     "context_summary": "Vizum Technologies S.A.P.I. de C.V., ubicada en Ciudad de México, está registrada bajo el RFC VTE221209RZ4. La empresa cuenta con una presentación detallada sobre su estructura y operaciones, actualizada a octubre de 2024, disponible en el documento ABC. Además, ha realizado operaciones financieras documentadas, como un depósito de 2,627,776 MXN vía SPEI el 20 de agosto de 2024.",
     "is_active": false,
     "conversation_id": "cb5836e5-b0f0-4673-b963-68085578c756"
+  },
+  "1751017983.863229": {
+    "thread_ts": "1751017983.863229",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751017985.2689002,
+    "last_activity": 1751018044.886903,
+    "messages": [
+      {
+        "id": "33d09153-8f96-4152-9a5a-9a34503c2d95",
+        "timestamp": 1751017985.270161,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> hola",
+        "role": "user",
+        "thread_ts": "1751017983.863229"
+      },
+      {
+        "id": "c714d485-d39d-40e5-a56b-7079eb99966d",
+        "timestamp": 1751017985.270835,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751017983.863229"
+      },
+      {
+        "id": "1818050b-c348-4ee1-ad7a-d69fe7775a6d",
+        "timestamp": 1751018044.885258,
+        "user_id": "",
+        "content": "¿Qué información tenemos sobre la empresa Vizum Technologies?",
+        "role": "user",
+        "thread_ts": "1751017983.863229"
+      },
+      {
+        "id": "0c83a74d-d682-46f9-97b7-58c625b38711",
+        "timestamp": 1751018044.886938,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751017983.863229"
+      }
+    ],
+    "context_summary": "La conversación revela un problema técnico al intentar acceder a la información sobre Vizum Technologies, lo que sugiere la necesidad de revisar los sistemas de acceso a datos para asegurar el cumplimiento regulatorio. Se recomienda contactar al equipo de soporte para resolver el problema y garantizar la disponibilidad de información precisa y oportuna.",
+    "is_active": false,
+    "conversation_id": "3884bb32-2001-45be-96ea-8b074bf8cc87"
+  },
+  "1751018862.346159": {
+    "thread_ts": "1751018862.346159",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751018864.220077,
+    "last_activity": 1751018864.2216802,
+    "messages": [
+      {
+        "id": "1e22db20-172c-4bfa-9be0-bbca3fa47c21",
+        "timestamp": 1751018864.22113,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> hola",
+        "role": "user",
+        "thread_ts": "1751018862.346159"
+      },
+      {
+        "id": "35256822-9b06-446d-aa30-c59bd1124c91",
+        "timestamp": 1751018864.221695,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751018862.346159"
+      }
+    ],
+    "context_summary": "La conversación revela un problema técnico en el análisis de información por parte del asistente, sugiriendo la necesidad de intentar nuevamente o contactar al equipo de soporte. No se discutieron puntos específicos de cumplimiento regulatorio en el intercambio proporcionado.",
+    "is_active": false,
+    "conversation_id": "21c84d1a-92ea-406a-916f-16444c0b5ab8"
+  },
+  "1751019346.813409": {
+    "thread_ts": "1751019346.813409",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751019348.663871,
+    "last_activity": 1751019361.050373,
+    "messages": [
+      {
+        "id": "33827377-7cb0-48c1-ac0c-807ec0e274ed",
+        "timestamp": 1751019348.665044,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> hola",
+        "role": "user",
+        "thread_ts": "1751019346.813409"
+      },
+      {
+        "id": "c5fc0f8e-c796-4ca9-8649-a738ffc201bc",
+        "timestamp": 1751019348.665598,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751019346.813409"
+      },
+      {
+        "id": "10152d56-a18d-440b-bdb4-1855d097402c",
+        "timestamp": 1751019361.0499551,
+        "user_id": "",
+        "content": "¿Qué información tenemos sobre la empresa Vizum Technologies?",
+        "role": "user",
+        "thread_ts": "1751019346.813409"
+      },
+      {
+        "id": "083c1ce0-53eb-4ba7-9f9c-e806d801d177",
+        "timestamp": 1751019361.050452,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751019346.813409"
+      }
+    ],
+    "context_summary": "La conversación revela un problema técnico al intentar acceder a la información sobre Vizum Technologies, sugiriendo la necesidad de contactar al equipo de soporte para resolver el inconveniente. No se discutieron puntos específicos de cumplimiento regulatorio en el intercambio.",
+    "is_active": false,
+    "conversation_id": "34cb24f1-cf78-4db2-a1ff-c2270916435f"
+  },
+  "1751019597.198209": {
+    "thread_ts": "1751019597.198209",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751019599.510208,
+    "last_activity": 1751019599.512946,
+    "messages": [
+      {
+        "id": "3a962904-09bf-403b-ba51-4afc6356c3f7",
+        "timestamp": 1751019599.512219,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> hola",
+        "role": "user",
+        "thread_ts": "1751019597.198209"
+      },
+      {
+        "id": "70af285f-349f-49d4-a2e8-8562099688f1",
+        "timestamp": 1751019599.5129778,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751019597.198209"
+      }
+    ],
+    "context_summary": "En la conversación, se identificó un problema técnico que impidió el análisis de la información, lo que sugiere la necesidad de contactar al equipo de soporte para resolver el inconveniente. Este incidente resalta la importancia de mantener un sistema robusto para asegurar el cumplimiento regulatorio y la continuidad operativa.",
+    "is_active": false,
+    "conversation_id": "089a31c2-3372-48fd-b4e4-1c2e2e142e2e"
+  },
+  "1751021628.878039": {
+    "thread_ts": "1751021628.878039",
+    "channel_id": "",
+    "user_id": "",
+    "created_at": 1751021631.1362271,
+    "last_activity": 1751021639.912218,
+    "messages": [
+      {
+        "id": "a9bb5c72-f198-43a3-982a-d0d5e9ca9d65",
+        "timestamp": 1751021631.137731,
+        "user_id": "",
+        "content": "<@U0927PSTSUS> hola",
+        "role": "user",
+        "thread_ts": "1751021628.878039"
+      },
+      {
+        "id": "cff722b5-b098-45c6-86a0-d2e8dde101ed",
+        "timestamp": 1751021631.138342,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751021628.878039"
+      },
+      {
+        "id": "ec75a69d-1d15-4690-be63-04908cfb4519",
+        "timestamp": 1751021639.9116979,
+        "user_id": "",
+        "content": "¿Qué información tenemos sobre la empresa Vizum Technologies?",
+        "role": "user",
+        "thread_ts": "1751021628.878039"
+      },
+      {
+        "id": "1d858dfe-88c0-4402-8e98-53d6bb8a6c1d",
+        "timestamp": 1751021639.912244,
+        "user_id": "",
+        "content": "Kawiller, hubo un problema técnico al analizar la información. Por favor, intenta nuevamente o contacta al equipo de soporte.",
+        "role": "assistant",
+        "thread_ts": "1751021628.878039"
+      }
+    ],
+    "context_summary": "La conversación revela un problema técnico al intentar acceder a la información sobre Vizum Technologies, sugiriendo la necesidad de contactar al equipo de soporte para resolver la situación. No se discutieron puntos específicos de cumplimiento regulatorio debido a la interrupción técnica.",
+    "is_active": false,
+    "conversation_id": "29ece1c2-0054-4b58-a7b8-1888ad9bcddf"
   }
 }
